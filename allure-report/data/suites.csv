@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jul 08 18:45:04 IST 2023","Sat Jul 08 18:45:11 IST 2023","7053","","The Internet Guinea Pig Website: verify select checkbox","","","","Then select first checkbox",""
-"passed","Sat Jul 08 18:45:11 IST 2023","Sat Jul 08 18:45:11 IST 2023","1","","The Internet Guinea Pig Website: verify select checkbox","","","","",""
-"passed","Sat Jul 08 18:45:01 IST 2023","Sat Jul 08 18:45:04 IST 2023","2698","","The Internet Guinea Pig Website: verify select checkbox","","","","Given I am on the ""checkboxes"" page",""
