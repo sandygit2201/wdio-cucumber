@@ -1,4 +1,5 @@
 import type { Options } from '@wdio/types'
+import * as path from 'path'
 
 export const config: Options.Testrunner = {
     //
@@ -63,7 +64,12 @@ export const config: Options.Testrunner = {
     //
     capabilities: [{
         // capabilities for local browser web tests
-        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
+        browserName: 'chrome', // or "firefox", "microsoftedge", "safari",
+        "goog:chromeOptions":{
+            prefs:{
+                "download.default_directory" : path.join(process.cwd()+'/downloads')
+            }
+        }
     }],
     //
     // ===================
@@ -106,7 +112,7 @@ export const config: Options.Testrunner = {
     connectionRetryTimeout: 120000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 1,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
@@ -156,11 +162,13 @@ export const config: Options.Testrunner = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        tagExpression: '@test',
+        tagExpression: '@download',
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
-        ignoreUndefinedDefinitions: false
+        ignoreUndefinedDefinitions: false,
+        
+
     },
     
     //

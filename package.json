@@ -13,5 +13,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.ts"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }

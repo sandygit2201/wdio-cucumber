@@ -1,4 +1,4 @@
-@test
+@smoke 
 Feature: Dropdown feature
     Scenario: dropdown exmaple
         Given I am on the "dropdown" page
