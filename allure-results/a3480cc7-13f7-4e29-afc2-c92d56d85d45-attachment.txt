@@ -1,0 +1,42 @@
+{
+  "id": {
+    "sessionId": "2ece6ad6ce5f3a077a60caf5082c57db",
+    "elementId": "B1D5209319748E1A0749AA13983D9C7D_element_14",
+    "element-6066-11e4-a52e-4f735466cecf": "B1D5209319748E1A0749AA13983D9C7D_element_14",
+    "selector": "[name=\"frame-middle\"]",
+    "parent": {
+      "sessionId": "2ece6ad6ce5f3a077a60caf5082c57db",
+      "capabilities": {
+        "acceptInsecureCerts": false,
+        "browserName": "chrome",
+        "browserVersion": "114.0.5735.198",
+        "chrome": {
+          "chromedriverVersion": "114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052})",
+          "userDataDir": "/var/folders/7q/6xng4kdd1wn1s68zys3bhf4m0000gn/T/.com.google.Chrome.yiIWWK"
+        },
+        "goog:chromeOptions": {
+          "debuggerAddress": "localhost:50957"
+        },
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platformName": "mac os x",
+        "proxy": {},
+        "setWindowRect": true,
+        "strictFileInteractability": false,
+        "timeouts": {
+          "implicit": 0,
+          "pageLoad": 300000,
+          "script": 30000
+        },
+        "unhandledPromptBehavior": "dismiss and notify",
+        "webauthn:extension:credBlob": true,
+        "webauthn:extension:largeBlob": true,
+        "webauthn:extension:minPinLength": true,
+        "webauthn:extension:prf": true,
+        "webauthn:virtualAuthenticators": true
+      }
+    },
+    "isReactElement": false,
+    "isShadowElement": false
+  }
+}
