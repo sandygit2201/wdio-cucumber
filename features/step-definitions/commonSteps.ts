@@ -46,6 +46,11 @@ Given("Print data in shadowdom",async()=>{
 
     console.log("$$$$$$$$$$$$$$$")
     console.log("$$$$$$$$$$$$$$$")
+})
 
+Given("open login page", async()=>{
+
+    await browser.url('/login')
+    expect(await browser.getUrl()).toContain('login')
 
 })

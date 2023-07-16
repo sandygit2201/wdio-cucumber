@@ -1,8 +1,8 @@
 
-@iframe @heroku
+ @heroku
 Feature: working with iframes
 
-    @heroku 
+    @heroku @iframe
     Scenario: working with iframe
         Given I am on the "iframe" page
         Then Type Text in iframe

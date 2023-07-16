@@ -1,5 +1,7 @@
 import type { Options } from '@wdio/types'
 import * as path from 'path'
+import 'dotenv/config'
+
 
 export const config: Options.Testrunner = {
     //
@@ -78,7 +80,7 @@ export const config: Options.Testrunner = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'info',
+    logLevel: process.env.LOGLEVEL || 'info',
     //
     // Set specific log levels per logger
     // loggers:
@@ -102,10 +104,10 @@ export const config: Options.Testrunner = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://the-internet.herokuapp.com/',
+    baseUrl: process.env.BASEURL,
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 30000,
+    waitforTimeout: process.env.TIMEOUT || 30000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -162,7 +164,7 @@ export const config: Options.Testrunner = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        tagExpression: '@download',
+        tagExpression: process.env.TAGS,
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.

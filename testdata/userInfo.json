@@ -1,0 +1,16 @@
+{
+    "name": "w2a",
+    "email": "waaa@gmai.com",
+    "password": "abcd1234",
+    "dob-day": 28,
+    "dob-month": "july",
+    "dob-year": 2016,
+    "firstName": "way2",
+    "lastName": "automation",
+    "company": "abcd",
+    "address1": "1-1-1",
+    "country": "india",
+    "city": "delhi",
+    "zip": "400050",
+    "mobile": 12345
+}
