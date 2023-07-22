@@ -1,5 +1,5 @@
 Feature: The Internet Guinea Pig Website
-@smoke @regression 
+@smoke @regression @login
   Scenario: As a user, I can log into the secure area
 
     Given I am on the "login" page

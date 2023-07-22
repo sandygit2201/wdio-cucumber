@@ -1,5 +1,6 @@
 import { Given } from "@wdio/cucumber-framework";
 import page from "../pageobjects/page.js";
+import allureReporter from '@wdio/allure-reporter'
 
 Given("I am on the {string} page",async (requiredPage)=>{
     await page.open(requiredPage)
@@ -35,10 +36,6 @@ Given("select an {string} in dropdown",async(option)=>{
 
 Given("Print data in shadowdom",async()=>{
 
-    // const content = await $("#content")
-    // const shadowElement = await content.shadow$('[slot="my-text"]')
-    // console.log("$$$$$$$$$$$$$$$")
-    // console.log(await shadowElement.getText())
 
     console.log("$$$$$$$$$$$$$$$")
     console.log("$$$$$$$$$$$$$$$")
@@ -52,5 +49,11 @@ Given("open login page", async()=>{
 
     await browser.url('/login')
     expect(await browser.getUrl()).toContain('login')
+
+})
+
+Given('Add test story {string}', async(storyName)=>{
+
+await allureReporter.addStory(storyName)
 
 })

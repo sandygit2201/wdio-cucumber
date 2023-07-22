@@ -5,6 +5,11 @@ import SecurePage from '../pageobjects/secure.page.js';
 
 
 When("I login with {string} and {string}", async (username, password) => {
+
+    console.log(process.env.USERNAME)
+    
+    console.log(process.env.PASSWORD)
+
     await LoginPage.login(username, password)
 });
 
